@@ -1,0 +1,104 @@
+.user-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 11px;
+  min-width: 202px;
+  width: 100%;
+  background: #42459d;
+  border-radius: 30px;
+  z-index: 4;
+
+  &__container {
+    margin: 40px 32px 17px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &_e-wallet {
+      background: rgba($color: #2f80ed, $alpha: 0.2);
+      border-radius: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 124px;
+      width: 100%;
+
+      &_text {
+        margin: 5px 0;
+        margin-left: 7px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+      }
+
+      &_arrow {
+        margin: 5px 0;
+        margin-right: 7px;
+      }
+    }
+
+    &_menu-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+
+      &_item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 27px;
+
+        &:first-child {
+          margin-top: 0px;
+        }
+
+        &:last-child {
+          margin-top: 20px;
+        }
+
+        &_icon {
+          max-width: 18px;
+          width: 100%;
+        }
+
+        &_text {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #ffffff;
+          margin-left: 27px;
+          text-decoration: none;
+        }
+
+        &:hover {
+          .user-menu__container_menu-list_item_text {
+            color: #ffb800;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .user-menu {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+
+    &__container {
+      margin-left: 0;
+    }
+  }
+}

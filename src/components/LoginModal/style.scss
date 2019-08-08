@@ -1,0 +1,213 @@
+.login-modal {
+  background: #fcfcfc;
+  border-radius: 64px;
+  max-width: 968px;
+  width: 100%;
+  position: relative;
+  margin: 0 15px;
+
+  &__container {
+    margin: 83px 0;
+    margin-left: 85px;
+    max-width: 433px;
+    width: 100%;
+
+    &_form {
+      box-shadow: 23px 23px 45px rgba(9, 138, 253, 0.32);
+      border-radius: 32px;
+      background: #fcfcfc;
+
+      &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 64px;
+        padding: 49px 0;
+
+        &_title {
+          width: 100%;
+          font-family: Sniglet;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 40px;
+          color: #34495e;
+          margin-bottom: 124px;
+
+          &:after {
+            content: "";
+            display: block;
+            width: 19%;
+            padding-top: 10px;
+            border-bottom: 2px solid #ffb800;
+          }
+        }
+
+        &_or-text {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 15px;
+          margin: 32px 0;
+          color: #cee0ef;
+          text-transform: uppercase;
+          cursor: default;
+        }
+
+        &_inp-cont {
+          border: 0.5px solid #bfd7ea;
+          border-radius: 16px;
+          max-width: 296px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          margin-bottom: 32px;
+
+          input {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 15px;
+            color: #34495e;
+            border: none;
+            height: 100%;
+            padding: 20px 46px;
+
+            &:first-child {
+              border-bottom: 0.5px solid #bfd7ea;
+            }
+
+            &:focus {
+              outline-style: none;
+              box-shadow: none;
+            }
+          }
+        }
+
+        &_links {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 16px;
+
+          div {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+            color: #34495e;
+          }
+
+          span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+            color: #ea685d;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 37px;
+    right: 31px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ef4e5c;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    cursor: pointer;
+  }
+}
+
+.ints-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 296px;
+  height: 50px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6662df+0,e5426e+100 */
+  background: #6662df; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #6662df 0%, #e5426e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #6662df 0%,#e5426e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #6662df 0%,#e5426e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6662df', endColorstr='#e5426e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border-radius: 16px;
+  cursor: pointer;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__cont {
+    display: flex;
+    align-items: center;
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      z-index: 1;
+    }
+    &_text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+      z-index: 1;
+    }
+  }
+}
+
+.login-btn {
+  width: 100%;
+  background: #00cb77;
+  border-radius: 16px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 16px 123px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login-modal {
+    &__container {
+      margin: 0;
+      max-width: 100%;
+
+      &_form {
+        &_container {
+          margin: 0 15px;
+          &_inp-cont {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

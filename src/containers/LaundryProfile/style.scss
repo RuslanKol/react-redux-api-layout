@@ -1,0 +1,278 @@
+.laundry-profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 21px 0 136px;
+  max-width: 822px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  &__title {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 1;
+
+    &_block {
+      margin: 103px 75px 54px;
+
+      &_icon-name-rev {
+        display: flex;
+        align-items: center;
+
+        &_icon {
+          width: 100%;
+          max-width: 84px;
+          border: 2px solid #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 3px;
+        }
+
+        &_name-rev-block {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 33px;
+
+          &_name {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: #696b79;
+          }
+
+          &_rev {
+            display: flex;
+            margin-top: 17px;
+
+            .star-gold,
+            .star-gray {
+              height: 16px;
+            }
+
+            &_count {
+              margin-left: 8px;
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 14px;
+              display: flex;
+              align-items: center;
+              color: #909095;
+            }
+          }
+        }
+      }
+
+      &_desc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        &_item {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+
+          &_title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: #bdbdbd;
+            margin-bottom: 5px;
+          }
+
+          &_body {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #3a3a45;
+          }
+
+          &:last-child {
+            flex-grow: 2;
+          }
+        }
+      }
+    }
+  }
+
+  &__desc {
+    max-width: 734px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 32px 32px;
+    z-index: 0;
+
+    &_content {
+      margin: 43px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &_tabs {
+        display: flex;
+      }
+
+      .item-about-block {
+        padding: 20px 0;
+
+        &_about-item {
+          
+          background: #ffffff;
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+          border-radius: 16px;
+          box-sizing: border-box;
+          padding: 15px;
+          margin-bottom: 20px;
+
+          &_top {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 16px;
+            color: #4F4F4F;
+
+            .arrow-bottom {
+              transform: rotate(90deg);
+            }
+
+            .arrow-top {
+              transform: rotate(-90deg);
+            }
+          }
+
+          &_bottom {
+            &_desc {
+              margin-top: 20px;
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 14px;
+              text-align: justify;
+
+              color: #4F4F4F;
+            }
+          }
+        }
+
+        &_payment-type {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 14px;
+          color: #4F4F4F;
+          padding: 0 18px;
+
+          &_items {
+            display: flex;
+            
+          }
+        }
+
+        &_location {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 14px;
+          color: #4F4F4F;
+          padding: 0 18px;
+          
+          &_address {
+            text-align: right;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .info__cont {
+        &_tabs {
+          display: flex;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .laundry-profile {
+    &__title {
+      &_block {
+        margin: 15px;
+
+        &_desc {
+          flex-direction: column;
+          &_item {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    &__desc {
+      &_content {
+        margin: 30px 15px;
+        &_tabs {
+          flex-direction: column;
+
+          .profile-tab,
+          .profile-tab-active {
+            margin-bottom: 15px;
+          }
+        }
+
+        .prices-block {
+          .profile-menu-tab__list {
+            .profile-prices-menu-tab__container {
+              flex-direction: column;
+
+              &_img {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        .profile-drop-down {
+          &_body {
+            .profile-item {
+              &__image img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

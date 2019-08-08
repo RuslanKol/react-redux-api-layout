@@ -1,0 +1,42 @@
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 15px 0;
+    background-color: #FDFDFD;
+
+    &_left {
+        &_user-name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #4F4F4F;
+            margin-bottom: 5px;
+        }
+        &_user-desc {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 10px;
+            color: #828282;
+        }
+    }
+
+    &_right {
+        &_date {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 139.92%;
+            /* identical to box height, or 17px */
+
+            text-align: right;
+
+            color: #666666;
+        }
+    }
+}

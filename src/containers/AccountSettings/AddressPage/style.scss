@@ -1,0 +1,102 @@
+.address-page {
+  margin-top: 76px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .orders__sidebar_title_container {
+    margin: 24px 69px 64px;
+  }
+
+  &__main {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1021px;
+    margin-left: 32px;
+
+    &_cont {
+      margin: 81px 85px;
+      display: flex;
+      justify-content: center;
+
+      .account-settings__main_cont_edit-block_head {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4f4f4f;
+      }
+
+      .account-settings__main_cont_edit-block_input {
+        margin-bottom: 28px;
+      }
+
+      .account-settings__main_cont_edit-block_address-types-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+
+        .selected {
+          border: 1px solid #42459d;
+        }
+
+        &_type {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 100px;
+          height: 100px;
+          background: #ffffff;
+          border: 1px solid #edf0f7;
+          box-sizing: border-box;
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+          border-radius: 16px;
+          margin: 0 12px;
+          cursor: pointer;
+
+          &_img {
+            margin-bottom: 9px;
+          }
+
+          &_name {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #4f4f4f;
+          }
+        }
+      }
+
+      .account-settings__main_cont_save {
+        margin-top: 128px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .address-page {
+    flex-direction: column;
+
+    &__main {
+      margin-left: 0;
+
+      .account-settings__main_cont_edit-block_address-types-block_type {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

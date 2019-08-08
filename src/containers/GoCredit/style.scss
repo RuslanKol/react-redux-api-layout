@@ -1,0 +1,212 @@
+.gocredits {
+  margin-top: 76px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &__main {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1021px;
+    margin-left: 32px;
+
+    &_cont {
+      margin: 71px 0 71px 44px;
+
+      &_credits-block {
+        display: flex;
+        flex-wrap: wrap;
+
+        .credit,
+        .participated-credit {
+          margin: 0 20px 32px 0;
+        }
+      }
+
+      &_head {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #4f4f4f;
+        margin: 16px 0 23px;
+      }
+    }
+  }
+}
+
+.credit,
+.participated-credit {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 170px;
+  cursor: pointer;
+
+  &__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.credit {
+  &__cont {
+    margin: 21px 35px;
+
+    &_title {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #4f4f4f;
+      text-transform: uppercase;
+    }
+
+    &_info {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin: 10px 0 15px;
+
+      &_count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background: #ffb800;
+        border-radius: 50px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 53px;
+        color: #ffffff;
+      }
+
+      &_save {
+        position: absolute;
+        bottom: -5px;
+        left: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 94px;
+        height: 24px;
+        background: #ef4e5c;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+
+    &_price-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &_text {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #7c8495;
+        text-transform: uppercase;
+      }
+
+      &_price {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #7c8495;
+      }
+    }
+  }
+}
+
+.participated-credit {
+  &__cont {
+    margin: 26px 35px;
+
+    &_img {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    &_name {
+      margin-top: 20px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      line-height: 14px;
+      color: #7c8495;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .gocredits {
+    flex-direction: column;
+
+    .orders__sidebar {
+      max-width: 100%;
+    }
+
+    &__main {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 594px) {
+  .gocredits {
+    &__main {
+      &_cont {
+        &_credits-block {
+          .credit {
+            flex: 1;
+            max-width: inherit;
+
+            &__cont {
+              margin: 21px auto;
+              padding: 0 35px;
+            }
+          }
+        }
+      }
+    }
+
+    .orders__sidebar {
+      &_title {
+        &_container {
+          margin: 25px 30px 64px;
+        }
+      }
+    }
+  }
+}

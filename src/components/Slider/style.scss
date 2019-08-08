@@ -1,0 +1,56 @@
+.land-slider {
+  display: flex;
+  justify-content: center;
+
+  &__block {
+    display: flex;
+    justify-content: center;
+
+    div:first-child {
+      width: 315px;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+
+    button {
+      width: 22px;
+      height: 22px;
+      background: #e5f6fd;
+      border-radius: 4px;
+      transform: rotate(90deg);
+      border: none;
+      margin-bottom: 40px;
+    }
+
+    button:focus {
+      outline-style: none;
+      box-shadow: none;
+    }
+
+    button::before {
+      height: 3px;
+      content: "";
+      display: flex;
+      text-shadow: none;
+      background-color: #ebeeee;
+      width: 18px;
+      position: absolute;
+      bottom: 9px;
+      left: 32px;
+      cursor: default;
+    }
+
+    button:last-child::before {
+      display: none;
+    }
+
+    .carousel__dot--selected {
+      background: #098afd;
+    }
+  }
+}

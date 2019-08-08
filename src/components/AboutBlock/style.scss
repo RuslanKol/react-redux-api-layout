@@ -1,0 +1,45 @@
+.about-block {
+  width: 233px;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #42459d;
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: 20px;
+  cursor: pointer;
+
+  svg {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    .svg-color {
+      transition: all 0.3s;
+      fill: #b9e5fb;
+    }
+  }
+
+  span {
+    font-family: "Sniglet";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #fff;
+  }
+
+  &:hover {
+    width: 303px;
+    height: 230px;
+    background: #fcfcfc;
+    box-shadow: 0px 4px 45px rgba(9, 138, 253, 0.64);
+
+    span {
+      color: #000;
+    }
+
+    .svg-color {
+      fill: #34495e;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.profile-dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+
+  &__container {
+    margin: 41px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 357px;
+
+    &_title {
+      margin-bottom: 47px;
+
+      &_img-block {
+        position: relative;
+
+        &_close {
+          position: absolute;
+          top: 16px;
+          right: 15px;
+          width: 42px;
+          height: 42px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ef4e5c;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+          border-radius: 32px;
+          cursor: pointer;
+        }
+
+        &_img {
+          border-radius: 32px;
+        }
+
+        &_name {
+          position: absolute;
+          bottom: 16px;
+          left: 24px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 23px;
+          color: #ffffff;
+        }
+
+        &_shadow {
+          position: absolute;
+          width: 100%;
+          height: 100px;
+          bottom: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(52, 73, 94, 0) 0%,
+            #34495e 100%
+          );
+          border-radius: 0px 0px 32px 32px;
+        }
+      }
+    }
+
+    &_parameters-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &_param {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #ebeeee;
+        margin-bottom: 17px;
+        width: 100%;
+
+        &_item {
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 15px;
+          width: 100%;
+
+          &_icon {
+            display: flex;
+            align-items: center;
+          }
+
+          &_title {
+            display: flex;
+            flex-direction: column;
+
+            &_name {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 16px;
+              color: #098afd;
+              margin-bottom: 2px;
+            }
+
+            &_desc {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 12px;
+              color: #4f4f4f;
+              margin-bottom: 6px;
+            }
+
+            &_price {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 16px;
+              display: flex;
+              align-items: center;
+              color: #7c8495;
+            }
+          }
+
+          &_counter {
+            display: flex;
+            align-items: center;
+
+            &_btn {
+              width: 25px;
+              height: 25px;
+              cursor: pointer;
+            }
+
+            &_count {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              color: #7c8495;
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+
+    &_add-busket-btn {
+      max-width: 252px;
+      width: 100%;
+      background: #ffb800;
+      border-radius: 16px;
+      text-transform: uppercase;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      padding: 14px 45px;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline-style: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

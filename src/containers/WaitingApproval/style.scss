@@ -1,0 +1,54 @@
+.waiting-approval {
+    &__container {
+        &_image {
+            margin-top: 85px;
+            text-align: center;
+        }
+
+        &_info {
+            margin-top: 25px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            font-size: 17px;
+            line-height: 16px;
+            color: #7c8495;
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+        }
+
+        &_btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+            &_back {
+                background: #909095;
+                border-radius: 3px;  
+                text-transform: uppercase;
+                color: #ffffff;
+                font-size: 18px;
+                border: 1px solid #909095;
+                margin-right: 5px;
+                width: 138px;
+                padding: 10px 0;
+                cursor: pointer;
+            }
+
+            &_login {
+                background: #098AFD;
+                border-radius: 3px;  
+                text-transform: uppercase;
+                color: #ffffff;
+                font-size: 18px;
+                border: 1px solid #098AFD;
+                margin-left: 5px;
+                width: 138px;
+                padding: 10px 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

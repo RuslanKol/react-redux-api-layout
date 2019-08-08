@@ -1,0 +1,562 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  // padding: 0 15px;
+
+  .schedule {
+    display: flex;
+    justify-content: flex-end;
+    margin: 316px 0 0 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    max-width: 1380px;
+
+    .section-content {
+    
+      h2 {
+        font-family: 'Sniglet', cursive;
+        color: #34495E;
+        font-size: 52px;
+        line-height: 35px;
+        font-weight: 400;
+      }
+      .schedule__text {
+        font-family: "Roboto";
+        color: #7C8495;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 300;
+        opacity: 0.5;
+        margin: 31px 0px;
+      }
+
+      .land-icon-block {
+        display: flex;
+        // flex-wrap: wrap;
+        margin-top: 57px;
+
+        .schedule-btn {
+          margin-right: 16px;
+          cursor: pointer;
+
+          .icon-input__input {
+            width: 66px;
+          }
+        }
+
+        .location-field {
+          margin-right: 16px;
+          position: relative;
+
+          &_areas {
+            position: absolute;
+            background-color: #ffffff;
+            padding: 5px 15px;
+            box-sizing: border-box;
+            z-index: 5;
+            top: 60px;
+            border: 1px solid #bfd7ea;
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+
+            &.active {
+              display: block;
+            }
+
+            &_button {
+              display: block;
+              border: none;
+              background-color: transparent;
+              padding: 7px;
+              margin: 7px 0;
+              width: 100%;
+              text-align: left;
+              cursor: pointer;
+            }
+            &_button:hover {
+              background-color: #eeeeee;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
+  .the-best {
+    margin: 297px 0 0 0;
+    max-width: 1380px;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    & > div {
+      text-align: center;
+
+      h2.to-uprc {
+        font-family: 'Sniglet', cursive;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.01em;
+      }
+
+      .description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        color: #7C8495;
+        margin: 24px 0px 0px;
+        opacity: 0.5;
+        text-transform: none;
+      }
+    }
+  }
+
+  .benefits {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 229px 0px 0px;
+      max-width: 1380px;
+      padding: 0 15px;
+    }
+  }
+
+  .see-more {
+    margin: 420px 0 0 0;
+
+    &__cont {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1380px;
+      padding: 0 15px;
+      box-sizing: border-box;
+
+      &_left {
+        background-repeat: no-repeat;
+        background-position: center left;
+        width: 38%;
+        // margin-right: 113px;
+        background-size: 85%;
+  
+        .see-more__container {
+          display: flex;
+          flex-direction: column;
+          margin-left: 76px;
+  
+          h2 {
+            font-family: 'Sniglet', cursive;
+            color: #34495E;
+            font-size: 50px;
+            line-height: 62px;
+            letter-spacing: 0.01em;
+            margin-top: 117px;
+          }
+  
+          .description {
+            font-family: 'Sniglet', cursive;
+            color: #7C8495;
+            font-size: 32px;
+            line-height: 37px;
+            font-weight: 300;
+            opacity: 0.5;
+            margin: 36px 0 0 0;
+          }
+  
+          .find-btn {
+            width: 240px;
+            margin-top: 71px;
+  
+            & > div {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+  .apps {
+    margin: 478px 0px 0px 0px;
+    justify-content: flex-start;
+
+    .apps__phone {
+      width: 100%;
+      max-width: 50%;
+    }
+
+    .apps__text {
+      display: flex;
+      flex-direction: column;
+      margin: 217px 0 0 105px;
+      width: 33%;
+
+      h2 {
+        font-family: 'Sniglet', cursive;
+        color: #34495E;
+        font-size: 50px;
+        line-height: 62px;
+        letter-spacing: 0.01em;
+      }
+
+      .description {
+        font-family: 'Sniglet', cursive;
+        color: #7C8495;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 300;
+        opacity: 0.5;
+        margin: 33px 0px 0 0;
+      }
+
+      .land-icon-block {
+        margin: 142px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 382px 0 0 0;
+
+    & > img {
+      width: 102%;
+      margin-left: -3px;
+      margin-bottom: -2px;
+    }
+
+    .footer-wrapper {
+      background-color: #2E3192;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 15px;
+      position: relative;
+
+      .footer__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0px 142px;
+        max-width: 1382px;
+
+        .about-laundry {
+          width: 35%;
+          margin: 73px 0px 0px;
+
+          h2 {
+            font-family: 'Sniglet', cursive;
+            font-size: 24px;
+            line-height: 30px;
+            color: #ffffff;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          }
+
+          .description {
+            font-family: Roboto;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: justify;
+            text-indent: 8px;
+            color: #B9E5FB;
+            margin: 28px 0 0 0;
+          }
+
+          .help-container {
+            display: flex;
+            align-items: center;
+            margin: 79px 0 0 0;
+          }
+        }
+
+        .become-partner {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 80px 0px 0px;
+          width: 55%;
+
+          .become-partner__container {
+            display: flex;
+            align-items: center;
+            height: 230px;
+          }
+        }
+      }
+    }
+  }
+
+  .half-section {
+    width: 50%;
+  }
+
+  .find-btn {
+    border: 2px solid #098afd;
+    background: #098afd;
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+
+    .menu-item {
+      margin-left: 77px;
+      color: #b9e5fb;
+
+      &:last-child {
+        margin-left: 62px;
+      }
+    }
+  }
+
+  .download-btn {
+    background: #34495e;
+    border-radius: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 16px 10px;
+    min-width: 202px;
+    cursor: pointer;
+    width: max-content;
+    white-space: nowrap;
+
+    &:first-child {
+      margin-right: 32px;
+    }
+
+    &__device {
+      // font-family: Avenir Next; need to buy
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      line-height: 9px;
+      color: #ffffff;
+      margin-left: 21px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      padding: 8px 0 0 0;
+      text-align: left;
+
+      &_name {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .select {
+    background-color: rgba(83, 92, 160, 0.1);
+    border-radius: 16px;
+    border: none;
+    text-transform: uppercase;
+    color: #b9e5fb;
+    width: 202px;
+    height: 44px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 21px;
+    color: #b9e5fb;
+    padding: 13px 11px;
+    -moz-appearance: auto;
+    -webkit-appearance: auto;
+
+    option {
+      background-color: rgb(83, 92, 160);
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .app {
+
+    .schedule {
+      margin: 150px 0 0 0;
+
+      & > div {
+        width: 100%;
+
+        .section-content { 
+          .land-icon-block {
+            flex-wrap: wrap;
+
+            .schedule-btn,
+            .location-field,
+            .find-btn {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .the-best {
+      margin: 150px 0 0 0;
+    }
+
+    .benefits {
+      & > div {
+        margin: 150px 0 0 0;
+      }
+    }
+
+    .see-more {
+      margin: 150px 0 0 0;
+
+      &__cont {
+        flex-direction: column;
+
+        &_left {
+          width: 100%;
+          background-size: 50%;
+          margin-bottom: 50px;
+  
+          .see-more__container {
+            margin-left: 0;
+            padding: 0 15px;
+          }
+        }
+      }
+
+      
+
+      .land-slider {
+        .land-slider__block {
+          margin-left: 0;
+
+          .land-slider__dots {
+            margin: 20px 0 0 20px;
+          }
+        }
+      }
+    }
+
+    .apps {
+      margin: 100px 0 0 0;
+      flex-direction: column;
+
+      .apps__phone {
+        max-width: 100%;
+      }
+
+      .apps__text {
+        width: 100%;
+        margin: 100px 0 0 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        .land-icon-block {
+          margin-top: 75px;
+          flex-direction: column;
+
+          .download-btn {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      margin: 100px 0 0 0;
+
+      .footer-wrapper {
+
+        .footer__header {
+          flex-direction: column;
+
+          .about-laundry {
+            width: 100%;
+            margin: 0;
+
+            .help-container {
+              flex-direction: column;
+
+              .menu-item {
+                margin: 20px 0 0 0;
+              }
+            }
+          }
+          .become-partner {
+            width: 100%;
+            
+            .become-partner__container {
+              flex-direction: column;
+              height: auto;
+            }
+          }
+        }
+
+        .footer-container {
+          & > div {
+            .menu-item {
+              margin: 0 0 10px 0;
+            }
+          }
+          .menu-item {
+            display: block;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .app {
+    .benefits {
+      & > div {
+        flex-direction: column;
+
+        .landing-present-block {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    .schedule {
+      .section-content { 
+        .land-icon-block {
+          .schedule-btn,
+          .location-field,
+          .find-btn {
+            width: 100%;
+            margin-right: 0;
+            
+            .icon-input {
+              width: 100%;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}

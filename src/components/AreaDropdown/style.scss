@@ -1,0 +1,13 @@
+.location-field_areas {
+    &_item {
+        margin: 10px;
+
+        &_main-loc {
+            font-family: 'Roboto';
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@import "./variables";
+@import "./mixins";
+@import "./fonts.scss";
+@import "./modals.scss";
+@import "../containers/Landing/style.scss";
+@import "../components/Navbar/style.scss";
+@import "../components/Button/style.scss";
+@import "../components/IconInput/style.scss";
+@import "../components/LandingPresentBlock/style.scss";
+@import "../components/Logo/style.scss";
+@import "../components/MenuItem/style.scss";
+@import "../components/Slider/style.scss";
+@import "../components/AboutBlock/style.scss";
+@import "../components/Footer/style.scss";
+@import "../components/ItemListLaundry/style.scss";
+@import "../components/StarsRating/style.scss";
+@import "../components/PaymentType/style.scss";
+@import "../components/SearchListLaundry/style.scss";
+@import "../components/OrderCloud/style.scss";
+@import "../containers/LaundryProfile/style.scss";
+@import "../components/ProfileMenuTab/style.scss";
+@import "../components/ProfilePriceMenuTab/style.scss";
+@import "../components/ProfileDropDown/style.scss";
+@import "../components/ProfileItem/style.scss";
+@import "../components/ProfilePrice/style.scss";
+@import "../components/ProfileDropDownItem/style.scss";
+@import "../components/LoginModal/style.scss";
+@import "../components/RegisterModal/style.scss";
+@import "../components/ScheduleDeliveryModal/style.scss";
+@import "../components/DateSquare/style.scss";
+@import "../components/TimeSquare/style.scss";
+@import "../components/OrderResult/style.scss";
+@import "../components/Hamburger/style.scss";
+@import "../containers/Orders/style.scss";
+@import "../components/UserMenu/style.scss";
+@import "../containers/Chekcout/style.scss";
+@import "../containers/Cart/style.scss";
+@import "../containers/Favourites/style.scss";
+@import "../containers/Notifications/style.scss";
+@import "../containers/GoCredit/style.scss";
+@import "../containers/AccountSettings/style.scss";
+@import "../containers/AccountSettings/AddressPage/style.scss";
+@import "../containers/faq/style.scss";
+@import "../containers/ContactUs/style.scss";
+@import "../components/ReviewsItem/style.scss";
+@import "../components/Accordeon/style.scss";
+@import "../components/AreaDropdown/style.scss";
+@import "../containers/WaitingApproval/style.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+}
+
+.to-uprc {
+  text-transform: uppercase;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-pink {
+  background-color: #f1f1f1;
+}
+
+.bg-violet {
+  background-color: #42459d;
+}
+
+.trash-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: #ef4e5c;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 33px;
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.landing-present-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 256px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  svg {
+    margin: 85px 77px 80px;
+    .svg-color {
+      transition: all 0.3s;
+      fill: #d3e0f2;
+    }
+  }
+
+  span {
+    margin-bottom: 50px;
+    font-family: "Sniglet", cursive;
+    font-size: 32px;
+    line-height: 40px;
+    color: #bfd7ea;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 13px 13px 4px 4px rgba(185, 229, 251, 0.65);
+    -moz-box-shadow: 13px 13px 4px 4px rgba(185, 229, 251, 0.65);
+    box-shadow: 13px 13px 4px 4px rgba(185, 229, 251, 0.65);
+
+    svg {
+      .svg-color {
+        fill: #098afd;
+      }
+    }
+
+    span {
+      color: #098afd;
+    }
+  }
+}

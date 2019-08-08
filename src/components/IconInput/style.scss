@@ -1,0 +1,15 @@
+.icon-input {
+  display: flex;
+  border: 1px solid #bfd7ea;
+  border-radius: 16px;
+  padding: 14px 16px;
+  width: max-content;
+
+  &__input {
+    border: none;
+    margin-left: 16px;
+    font-family: "Sniglet", cursive;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

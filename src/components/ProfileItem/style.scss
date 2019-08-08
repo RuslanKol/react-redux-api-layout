@@ -1,0 +1,83 @@
+.profile-item {
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 320px;
+  margin: 8px 0;
+  max-height: 142px; // should be fix
+  cursor: pointer;
+  overflow: hidden;
+
+  &__image {
+    border-radius: 5px;
+    z-index: 0;
+    
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    border-radius: 0px 0px 5px 5px;
+    z-index: 1;
+  }
+
+  &__bookmark {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    padding: 8px 13px;
+    background: #2d9cdb;
+    border-radius: 25px 0px 0px 25px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  &__block {
+    position: absolute;
+    bottom: 17px;
+    left: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+
+    &_name-price {
+      display: flex;
+      flex-direction: column;
+
+      &_name {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        color: #ffffff;
+      }
+      &_price {
+        margin-top: 4px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+      }
+    }
+  }
+}

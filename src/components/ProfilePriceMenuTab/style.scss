@@ -1,0 +1,61 @@
+.profile-menu-tab__list {
+  display: flex;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.profile-prices-menu-tab,
+.profile-prices-menu-tab-active {
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid #edf0f7;
+  cursor: pointer;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin: 22px auto;
+
+    &_img {
+      margin-right: 16px;
+
+      svg path {
+        fill: #b9e5fb;
+      }
+    }
+
+    &_name {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #7c8495;
+    }
+  }
+
+  &-active {
+    border: 1px solid #edf0f7;
+    border-bottom: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    &:first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .profile-prices-menu-tab__container_img {
+      margin-right: 16px;
+
+      svg path {
+        fill: #098afd;
+      }
+    }
+    .profile-prices-menu-tab__container_name {
+      color: #000000;
+    }
+  }
+}

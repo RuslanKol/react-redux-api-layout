@@ -1,0 +1,44 @@
+.search-list-laundry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 670px;
+  width: 100%;
+  margin-top: 134px;
+  margin-bottom: 62px;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  &__search-input,
+  &__search-btn {
+    @include outline-none;
+  }
+
+  &__search-input {
+    max-width: 586px;
+    width: 100%;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #bfd7ea;
+    border-radius: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #34495e;
+    padding: 0 17px;
+  }
+
+  &__search-btn {
+    width: 76px;
+    height: 48px;
+    background: #098afd;
+    border-radius: 16px;
+    border: none;
+    margin-left: 21px;
+    cursor: pointer;
+  }
+}

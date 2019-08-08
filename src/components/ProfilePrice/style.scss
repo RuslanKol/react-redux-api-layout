@@ -1,0 +1,32 @@
+.profile-price {
+  width: 100%;
+  border-bottom: 1px solid rgba(235, 238, 238, 0.5);
+
+  &:last-child {
+    border: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 30px;
+
+    &_name {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #7c8495;
+    }
+
+    &_time {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #7c8495;
+    }
+  }
+}

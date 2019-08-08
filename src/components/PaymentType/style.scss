@@ -1,0 +1,57 @@
+.payment-type {
+  border-radius: 25px;
+  max-width: 95px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 16px 6px 0;
+
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 12px;
+    color: #34495e;
+    margin: 6px 10px;
+    cursor: default;
+  }
+
+  &:hover {
+    .payment-type__text {
+      color: #fff;
+    }
+  }
+}
+
+.laundry-list-item__desc_block_item_body {
+  .payment-type {
+    max-width: 74px;
+    margin-right: 7px;
+  }
+}
+
+.payment-type-ONL {
+  border: #4eb1d1 solid 1px;
+
+  &:hover {
+    background: #4eb1d1;
+  }
+}
+
+.payment-type-COD {
+  border: #00cb77 solid 1px;
+
+  &:hover {
+    background: #00cb77;
+  }
+}
+
+.payment-type-Card {
+  border: #00bef3 solid 1px;
+
+  &:hover {
+    background: #00bef3;
+  }
+}

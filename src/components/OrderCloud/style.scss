@@ -1,0 +1,60 @@
+.order-cloud {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+  width: 202px;
+  height: 86px;
+  background: #ffffff;
+  border-radius: 32px;
+  z-index: 3;
+
+  &__schedule,
+  &__basket {
+    cursor: pointer;
+  }
+
+  &__schedule {
+    display: flex;
+    &_icon {
+      width: 42px;
+      height: 33px;
+    }
+  }
+
+  &__basket {
+    position: relative;
+
+    &_count {
+      position: absolute;
+      top: -7px;
+      right: -7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 16px;
+      height: 16px;
+      background: #fd0f0f;
+      border-radius: 3px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 14px;
+      color: #ffffff;
+    }
+
+    &_icon {
+      width: 41px;
+      height: 38px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .order-cloud {
+    bottom: 20px;
+  }
+}

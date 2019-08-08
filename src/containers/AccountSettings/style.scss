@@ -1,0 +1,321 @@
+.account-settings {
+  margin-top: 76px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  &__sidebar-item {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &_cont {
+      display: flex;
+      justify-content: space-between;
+      margin: 27px 20px;
+      width: 100%;
+
+      &_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #4f4f4f;
+      }
+
+      &_checkbox,
+      &_checkbox-active {
+        width: 35px;
+        height: 18px;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &_circle {
+          background: #ffffff;
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          position: absolute;
+        }
+      }
+
+      &_checkbox {
+        background: silver;
+
+        &_circle {
+          left: 2px;
+        }
+      }
+
+      &_checkbox-active {
+        background: #ffb800;
+
+        &_circle {
+          right: 2px;
+        }
+      }
+
+      &_arrow-right {
+        width: 16px;
+        height: 16px;
+      }
+
+      &_arrow-top {
+        width: 16px;
+        height: 16px;
+        transform: rotate(-90deg);
+      }
+
+      &_lang {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .radio-select-lang {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__main {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1021px;
+    margin-left: 32px;
+
+    &_cont {
+      margin: 80px 56px;
+      display: flex;
+      justify-content: center;
+
+      &_edit-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+
+        &_input {
+          position: relative;
+          width: 100%;
+          margin-bottom: 29px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          border-radius: 3px;
+          width: 100%;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          label {
+            position: absolute;
+            background: #edf0f7;
+            border-radius: 3px;
+            padding: 4px 6px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            color: #000000;
+            top: -10px;
+            left: 6px;
+          }
+
+          input,
+          &_select {
+            margin-left: 14px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            color: #696b79;
+            width: 90%;
+            height: 43px;
+            border: none;
+          }
+
+          &_select {
+            display: flex;
+            align-items: center;
+            margin: 35px 0 21px 14px;
+            height: auto;
+          }
+        }
+      }
+
+      &_address-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &_add-new {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 70px;
+        }
+
+        &_address-cont {
+          display: flex;
+          // align-items: center;
+          width: 100%;
+          background: #ffffff;
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+          border-radius: 16px;
+          margin-bottom: 32px;
+          cursor: pointer;
+
+          .radio-select {
+            align-items: center;
+          }
+
+          &_cont {
+            display: flex;
+            width: 100%;
+            margin: 12px 20px;
+
+            &_address {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              margin-left: 15px;
+
+              &_name {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #4f4f4f;
+                margin-bottom: 6px;
+              }
+
+              &_other {
+                font-family: Quicksand;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                color: #4f4f4f;
+              }
+            }
+
+            &_edit {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+      &_save {
+        margin-top: 98px;
+        width: 100%;
+        height: 45px;
+        background: #098afd;
+        border-radius: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        border: none;
+        color: #ffffff;
+      }
+
+      &_add {
+        width: 124px;
+        height: 40px;
+        background: #ffb800;
+        border: 0.25px solid #ebeeee;
+        box-sizing: border-box;
+        box-shadow: 2px 15px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        color: #4f4f4f;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          margin-left: 17px;
+        }
+      }
+
+      .contact-us {
+        margin: 0;
+
+        &__main {
+          margin-left: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.radio-select {
+  display: flex;
+  cursor: pointer;
+
+  &_text {
+    margin: 0 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4f4f4f;
+  }
+
+  &_circle,
+  &_circle-active {
+    border: 1px solid #42459d;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+
+  &_circle {
+    background: #ffffff;
+  }
+
+  &_circle-active {
+    background: #42459d;
+  }
+}
+
+@media (max-width: 1024px) {
+  .account-settings {
+    flex-direction: column;
+
+    &__main {
+      margin-left: 0;
+    }
+  }
+}

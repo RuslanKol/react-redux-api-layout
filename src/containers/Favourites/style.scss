@@ -1,0 +1,159 @@
+.favourites {
+  margin-top: 76px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &__main {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1021px;
+    margin-left: 32px;
+
+    &_cont {
+      margin: 71px 85px;
+    }
+  }
+}
+
+.fav-item {
+  width: 100%;
+  max-width: 851px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  margin-bottom: 32px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__container {
+    display: flex;
+    margin: 24px 0 21px 33px;
+    z-index: 2;
+
+    &_body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 29px;
+
+      &_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #ffffff;
+      }
+
+      &_revs {
+        display: flex;
+        align-items: center;
+
+        &_text {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &_img {
+      border: 2px solid #ffffff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 81px;
+      height: 81px;
+    }
+  }
+
+  .trash-btn {
+    position: absolute;
+    top: 14px;
+    right: 32px;
+    z-index: 2;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+  }
+
+  &__shadow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 1;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .favourites {
+    flex-direction: column;
+
+    .orders__sidebar {
+      max-width: 100%;
+    }
+
+    &__main {
+      margin-left: 0;
+
+      &_cont {
+        margin: 71px 10px;
+
+        .fav-item {
+          &__container {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0;
+
+            &_img {
+              margin: 0 auto;
+            }
+
+            &_body {
+              margin-left: 0;
+
+              &_revs {
+                justify-content: center;
+              }
+            }
+          }
+
+          &__img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
